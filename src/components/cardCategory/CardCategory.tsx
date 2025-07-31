@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 const categorias = [
   'Ciencia',
-  'Espectáculo',
-  'Historia-Geografía',
+  'Espectaculo',
+  'Historia-y-Geografia',
   'Deporte',
-  'Videojuegos',
-  'Naturaleza',
+  'cultura-pop',
+  'naturaleza',
 ];
 
 function CardCategory() {

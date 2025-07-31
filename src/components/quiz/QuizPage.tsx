@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, { useState } from 'react'
@@ -17,10 +18,10 @@ const QuizPage = ({ cid }: QuizPageProps) => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen space-y-6 bg-gray-900">
-      <p className="text-white text-center text-2xl">{cid}</p>
+      <p className="text-white text-center text-2xl">Categoría elegida: {cid}</p>
 
       {showQuiz ? (
-        <Quiz />
+        <Quiz cid={cid} />
       ) : (
         <div className="flex space-x-4">
           <button
