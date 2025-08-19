@@ -3,16 +3,12 @@ import Link from 'next/link'
 import CardCategory from '@/components/cardCategory/CardCategory'
 
 const page = () => {
-
   return (
-<div className="flex justify-center items-center ml-[80px]">
-  <div className="grid grid-cols-3 grid-rows-2 gap-6 p-6">
-
-    <CardCategory></CardCategory>
-
-  </div>
-</div>
-
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="grid grid-cols-3 grid-rows-2 gap-6 p-6">
+        <CardCategory />
+      </div>
+    </div>
   )
 }
 

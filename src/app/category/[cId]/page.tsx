@@ -1,4 +1,3 @@
-
 import QuizPage from '@/components/quiz/QuizPage'
 
 interface PageProps {
@@ -9,7 +8,11 @@ const Page = async ({ params }: PageProps) => {
   const resolvedParams = await params
   const cid = decodeURIComponent(resolvedParams.cId)
 
-  return <QuizPage cid={cid} />
+  return (
+    <div className="flex justify-center items-center min-h-screen">
+      <QuizPage cid={cid} />
+    </div>
+  )
 }
 
 export default Page
