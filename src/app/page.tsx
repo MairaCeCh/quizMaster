@@ -23,7 +23,7 @@ export const metadata = {
 const page = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <CardCategory />
+      {/* <CardCategory /> */}
     </div>
   )
 }
