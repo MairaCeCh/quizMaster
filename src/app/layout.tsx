@@ -28,9 +28,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <>
             <NavBar />
             <Menu />
-            <main className="flex flex-col items-center justify-center  w-full overflow-hidden">
-              {children}
-            </main>
+           
+           <main className="flex flex-col items-center justify-start w-full min-h-[40vh] overflow-hidden">
+  {children}
+</main>
           </>
         )}
       </body>

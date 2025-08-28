@@ -14,7 +14,7 @@
 
 // export default page
 import React from 'react'
-import CardCategory from '@/components/cardCategory/CardCategory'
+
 
 export const metadata = {
   title: 'Quiz Master ',
@@ -22,8 +22,8 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      {/* <CardCategory /> */}
+    <div className="flex justify-center items-center min-h-[40vh]">
+    
     </div>
   )
 }

@@ -25,8 +25,8 @@ const Quiz: React.FC<Props> = ({ cid }) => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
-      <div className="text-white text-lg bg-gray-800 px-6 py-5 rounded-md max-w-xl w-full">
+    <div className="flex justify-center items-center ">
+      <div className="text-white text-lg bg-pink-800 px-6 py-5 rounded-md max-w-xl w-full">
         <h1 className="mb-4 text-2xl font-bold text-center">Categoría: {cid}</h1>
         {preguntaRandom ? (
           <div>

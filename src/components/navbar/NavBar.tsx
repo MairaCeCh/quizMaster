@@ -26,7 +26,7 @@ const NavBar = () => {
         <Link href="/">Masterquiz!</Link>
       </h1>
 
-      <aside className="w-30 h-screen bg-purple-600 shadow-lg p-4 fixed left-0 top-0">
+      <aside className="w-30 h-screen nav shadow-lg p-4 fixed left-0 top-0">
         <ul className="space-y-2">
           {type === 'board' && (
             <li className="flex items-center gap-2 text-black">
@@ -35,7 +35,7 @@ const NavBar = () => {
             </li>
           )}
           <li>
-            <a href="#" className="text-black hover:text-blue-500">Salir</a>
+            <a href="#" className="text-black ">Salir</a>
           </li>
         </ul>
       </aside>

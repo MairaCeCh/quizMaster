@@ -9,7 +9,7 @@ const Page = async ({ params }: PageProps) => {
   const cid = decodeURIComponent(resolvedParams.cId)
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-[40vh]">
       <QuizPage cid={cid} />
     </div>
   )

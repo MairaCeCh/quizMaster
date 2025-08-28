@@ -12,8 +12,8 @@ const categorias = [
 
 function CardCategory() {
   return (
-    <div className="flex justify-center items-center min-h-screen w-full">
-      <div className="grid grid-cols-3 grid-rows-2 gap-6 p-6 bg-white rounded-xl shadow-lg mx-auto">
+    <div className="max-w-xl mx-auto mt-10 bg-white rounded-xl shadow-lg p-6">
+      <div className="grid grid-cols-2 grid-rows-2 gap-6">
         {categorias.map((nombre) => (
           <Link
             key={nombre}
@@ -27,5 +27,9 @@ function CardCategory() {
     </div>
   );
 }
+
+
+
+
 
 export default CardCategory
