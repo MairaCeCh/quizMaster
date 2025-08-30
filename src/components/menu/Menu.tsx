@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 const Menu = () => {
   const pathname = usePathname();
 
-  if (pathname !== '/') return null; 
+  // if (pathname !== '/') return null; 
 
   return (
     <div className="flex justify-center items-center gap-12 h-[400px]">

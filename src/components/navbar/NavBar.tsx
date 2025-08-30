@@ -22,9 +22,9 @@ const NavBar = () => {
 
   return (
     <div>
-      <h1 className="flex justify-center items-center text-3xl font-bold h-[200px]">
+      {/* <h1 className="flex justify-center items-center text-3xl font-bold h-[200px]">
         <Link href="/">Masterquiz!</Link>
-      </h1>
+      </h1> */}
 
       <aside className="w-30 h-screen nav shadow-lg p-4 fixed left-0 top-0">
         <ul className="space-y-2">
@@ -35,7 +35,7 @@ const NavBar = () => {
             </li>
           )}
           <li>
-            <a href="#" className="text-black ">Salir</a>
+            <Link href="/" className="text-black ">Salir</Link>
           </li>
         </ul>
       </aside>
