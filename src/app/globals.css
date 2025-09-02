@@ -18,14 +18,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-pixel), sans-serif;
+  
+}
+
+h1{
+  color: #000;
 }
 .nav {
   background-color: #7BD3EA;
 } 
-.button {
-  background-color: #A1EEBD;
-}
 
-.card {
-  background-color: #F6F7C4;
-}
+
+
