@@ -6,6 +6,7 @@ import Background from "@/components/background/Background";
 import { Press_Start_2P } from "next/font/google";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 
 const pixelFont = Press_Start_2P({
@@ -32,11 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Background />
         {!isHomePage && <NavBar />}
         <main className="flex flex-col items-center justify-center w-full h-full overflow-hidden text-white">
-                <h1 
+                <Link href={"/"}
         className={`text-white text-3xl font-[var(--font-pixel)]`}
       >
         Masterquiz!
-      </h1>
+      </Link>
           {children}
         </main>
       </body>

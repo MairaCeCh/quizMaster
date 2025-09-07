@@ -1,61 +1,4 @@
-// 'use client';
 
-// import React from 'react';
-// import Link from 'next/link';
-// import { useSearchParams } from 'next/navigation';
-
-// const DiceIcon = () => (
-//   <svg
-//     xmlns="http://www.w3.org/2000/svg"
-//     fill="currentColor"
-//     viewBox="0 0 24 24"
-//     className="w-6 h-6 text-black"
-//   >
-//     <path d="M21 3H3v18h18V3zm-2 2v14H5V5h14zM8 8a1 1 0 110 2 1 1 0 010-2zm8 0a1 1 0 110 2 1 1 0 010-2zm-4 4a1 1 0 110 2 1 1 0 010-2z" />
-//   </svg>
-// );
-
-// const NavBar = () => {
-//   const searchParams = useSearchParams();
-//   const type = searchParams.get('type');
-
-//   return (
-//     // No necesitamos un div envoltorio aquí si solo tenemos el aside
-//     // <div className=""> 
-//       <aside className="
-     
-//         w-30 h-96
-//         bg-gray-800/50 
-       
-//         backdrop-blur-sm    
-//         absolute top-40
-//         p-4 
-//         rounded-lg        
-       
-//         shadow-lg
-//         text-white            
-//         flex flex-col justify-between 
-//       ">
-//         <ul className="space-y-4"> {/* Aumenté el espacio entre elementos */}
-//           {type === 'board' && (
-//             <li className="flex items-center gap-2 text-white"> {/* Asegura que el texto y el ícono sean blancos */}
-//               <DiceIcon /> {/* El ícono ya es negro, se contrastará con el fondo opaco */}
-//               {/* Opcional: podrías poner algún texto aquí si lo deseas */}
-//             </li>
-//           )}
-//         </ul>
-//         {/* Usamos 'mt-auto' para empujar el enlace 'Volver' hacia abajo si es necesario */}
-//         <div className="mt-auto"> 
-//           <Link href="/" className="text-white hover:text-gray-300 transition-colors duration-200">
-//             Volver
-//           </Link>
-//         </div>
-//       </aside>
-//     // </div>
-//   );
-// };
-
-// export default NavBar;
 'use client'; 
 
 import React, { useState, useEffect } from 'react'; 
@@ -76,16 +19,15 @@ const DiceIcon = () => (
 const NavBar = () => { 
   const searchParams = useSearchParams(); 
   const type = searchParams.get('type'); 
-  const [navPosition, setNavPosition] = useState('left-[-20rem]'); // Estado inicial: fuera de la pantalla a la izquierda
-
+  const [navPosition, setNavPosition] = useState('left-[-20rem]'); 
   useEffect(() => {
-    // Al montar el componente, cambia el estado para que el nav se deslice
+
     setNavPosition('left-0');
   }, []);
 
   return ( 
     <aside className={` 
-      
+       hover:translate-x-12
         w-30 h-96 
         bg-cyan-600/20  
         backdrop-blur-sm     

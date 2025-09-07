@@ -8,24 +8,17 @@ const Start = () => {
 
   const handleStartClick = () => {
     setStartClicked(true);
-    // Puedes agregar un delay si quieres que la animación termine antes de navegar
-    // setTimeout(() => {
-    //   window.location.href = "/menu";
-    // }, 1000);
+  
   };
 
   return (
     <div className="flex flex-col items-center justify-center h-24 text-white font-pixel">
-      {/* <h1 
-        className={`text-white text-3xl font-[var(--font-pixel)] masterquiz-text ${startClicked ? 'animate-up' : ''}`}
-      >
-        Masterquiz!
-      </h1> */}
+    
 
       <Link
         href={"/menu"}
         onClick={handleStartClick}
-        className="bg-green-500 hover:bg-green-700 text-black font-bold py-2 px-4 rounded"
+        className="flex items-center gap-2  bg-rose-600/20   text-black px-8 py-2 rounded-lg shadow-lg"
       >
         Empecemos
       </Link>
