@@ -10,7 +10,7 @@ const Page = async ({ params }: PageProps) => {
 
   return (
     <div className="flex justify-center items-center min-h-[40vh]">
-      <QuizPage cid={cid} />
+      <QuizPage cid={cid}/>
     </div>
   )
 }
